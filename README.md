@@ -105,4 +105,4 @@ The IMU data should now be available in the time plot.
 | :--: |
 | *Data Visualizer Time Plot* |
 
-Visit the [Machine Learning Plugin page](https://microchipdeveloper.com/machine-learning:ml-plugin) to learn more about using the Data Visualizer plugin to export your data for machine learning applications.
+Visit the [Machine Learning Plugin page](https://www.microchip.com/en-us/solutions/technologies/machine-learning) to learn more about using the Data Visualizer plugin to export your data for machine learning applications.
