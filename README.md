@@ -31,7 +31,7 @@ This repository contains firmware for streaming up to 3-axes IMU data over UART 
 
 
 ## How to Configure, Compile, and Flash
-The steps below explain the process of configuring the the data logger firmware build, compiling it, and flashing it to the dSPIC33CK device.
+The steps below explain the process of configuring the data logger firmware build, compiling it, and flashing it to the dSPIC33CK device.
 
 1. Plug the dSPIC33CK Curiosity Board into your PC via USB.
 2. Install the MPLAB X IDE and XC16 compiler. These are required to load the data logger project and to program the dSPIC33CK Curiosity Board.
@@ -72,7 +72,7 @@ In addition, the onboard LED3 will indicate firmware status as summarized in the
 | Buffer Overflow |	LED3 (YELLOW) on for 5 seconds	| Processing is not able to keep up with real-time; data buffer has been reset. |
 
 # Usage with the MPLAB Data Visualizer and Machine Learning Plugins
-This project can be used to generate firmware for streaming data to the [MPLAB Data Visualizer plugin](https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/mplab-data-visualizer).  Once the firmware is flashed, follow the steps below to set up Data Visualizer.
+This project can be used to generate a firmware for streaming data to the [MPLAB Data Visualizer plugin](https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/mplab-data-visualizer).  Once the firmware is flashed, follow the steps below to set up Data Visualizer.
 
 1. Connect the Curiosity board to your computer, open up MPLAB X, and open the Data Visualizer plugin.
 2. Click the *Load Workspace* button as highlighted in the image below. Select one of the workspace files included in this repository - located under the `dv-workspace` folder - whose name most closely describes your sensor configuration; you can always modify the configuration once it is loaded if needed.
@@ -81,7 +81,7 @@ This project can be used to generate firmware for streaming data to the [MPLAB D
 | :--: |
 | *Loading the workspace file* |
 
-3. Next, select the Serial/CDC Connection that corresponds to the Curiosity board, adjust the baud rate to 38400.
+3. Next, select the Serial/CDC Connection that corresponds to the Curiosity board, and adjust the baud rate to 38400.
 
 | ![configure serial port](images/dv-baud.png) |
 | :--: |
@@ -93,7 +93,7 @@ This project can be used to generate firmware for streaming data to the [MPLAB D
 | :--: |
 | *Start Streaming* |
 
-5. Switch to the *Variable Streamers* tab and select the aforementioned Serial/CDC Connection from the drop down menu as the input data source for the IMU variable streamer (see image below for reference); this will enable parsing of the dSPIC33CK data stream. You may delete or add variables here if your sensor configuration differs from the pre-loaded ones.
+5. Switch to the *Variable Streamers* tab and select the aforementioned Serial/CDC Connection from the drop-down menu as the input data source for the IMU variable streamer (see image below for reference); this will enable parsing of the dSPIC33CK data stream. You may delete or add variables here if your sensor configuration differs from the pre-loaded ones.
 
 | ![data source](images/dv-ds-var-selection.png) |
 | :--: |
